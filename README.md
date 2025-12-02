@@ -39,6 +39,22 @@ Código para el ESP32 encargado de generar la secuencia de seis pasos mediante M
 <p data-start="2019" data-end="2170"><strong data-start="2019" data-end="2041">Bloque de control:</strong> ESP32 configurado con MCPWM, convertidor de nivel y totem-pole para la compuerta del lado bajo, más bootstrap para el lado alto.</p>
 </li>
 </ol>
+
+<h2 data-start="3791" data-end="3813">Código de control</h2>
+<p data-start="3814" data-end="3962">El firmware incluido implementa conmutación de seis pasos usando MCPWM del ESP32 (páginas 23–26) .<br data-start="3949" data-end="3952">
+Incluye:</p>
+<ul data-start="3963" data-end="4080">
+<li data-start="3963" data-end="3990">
+<p data-start="3965" data-end="3990">Inserción de dead-time.</p>
+</li>
+<li data-start="3991" data-end="4018">
+<p data-start="3993" data-end="4018">Control del ciclo de trabajo.</p>
+</li>
+<li data-start="4019" data-end="4043">
+<p data-start="4021" data-end="4043">Secuenciación S0–S5.</p>
+</li>
+</ul>
+  
 <h2 data-start="2172" data-end="2202">Resultados experimentales</h2>
 <p data-start="2203" data-end="2323">El documento presenta mediciones reales de tiempos de conmutación (páginas 11–14):
 
@@ -78,17 +94,4 @@ Código para el ESP32 encargado de generar la secuencia de seis pasos mediante M
 <p data-start="3675" data-end="3789">Analizar con mayor precisión la <strong data-start="3707" data-end="3744">referencia flotante del lado alto</strong>, incorporándola explícitamente en el modelo.</p>
 </li>
 </ul>
-<h2 data-start="3791" data-end="3813">Código de control</h2>
-<p data-start="3814" data-end="3962">El firmware incluido implementa conmutación de seis pasos usando MCPWM del ESP32 (páginas 23–26) .<br data-start="3949" data-end="3952">
-Incluye:</p>
-<ul data-start="3963" data-end="4080">
-<li data-start="3963" data-end="3990">
-<p data-start="3965" data-end="3990">Inserción de dead-time.</p>
-</li>
-<li data-start="3991" data-end="4018">
-<p data-start="3993" data-end="4018">Control del ciclo de trabajo.</p>
-</li>
-<li data-start="4019" data-end="4043">
-<p data-start="4021" data-end="4043">Secuenciación S0–S5.</p>
-</li>
-</ul>
+
